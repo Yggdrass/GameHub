@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "Lucida Console";
-  src: url("lucida_console_regular.ttf");
+  font-family: "Lucida_Console";
+  src: url("fonts/lucida_console_regular.ttf");
 
   font-family: "Bauhaus_93";
-  src: url("bauhs93.ttf");
+  src: url("fonts/bauhs93.ttf");
 }
 
 body {
@@ -15,19 +15,14 @@ body {
 header {
   background: white;
   display: flex;
-  flex-flow: row;
   max-height: 130px;
-  width: 100%;
   padding-left: 284px;
-  position: relative;
 }
 
-nav,
-#hamburger-menu {
+nav {
   background-color: white;
-  font-family: "Lucida console", Arial, sans-serif;
+  font-family: "Lucida_Console", Arial, sans-serif;
   font-size: 38px;
-  display: flex;
 }
 
 nav li {
@@ -43,8 +38,13 @@ nav a {
   padding-top: 46px;
 }
 
-nav a:hover {
-  text-decoration: underline;
+a:hover {
+  color: white;
+  background-color: #1b203d;
+  padding-top: 5px;
+  padding-right: 7px;
+  padding-bottom: 5px;
+  padding-left: 7px;
 }
 
 .logo {
@@ -52,7 +52,6 @@ nav a:hover {
   max-height: 94px;
   padding-top: 18px;
   padding-bottom: 18px;
-  padding-left: 359px;
 }
 
 h1 {
@@ -60,8 +59,18 @@ h1 {
   font-size: 81px;
   letter-spacing: 12px;
   text-decoration: none;
-  text-decoration-color: #1b203d;
   color: white;
+  text-align: center;
+  text-shadow: 0px 4px 6px #3596c7;
+  -webkit-text-stroke: 0.5px #1b203d;
+}
+
+#h1 {
+  font-family: "Bauhaus_93", Arial, sans-serif;
+  font-size: 81px;
+  letter-spacing: 12px;
+  text-decoration: none;
+  color: #e8d123;
   text-align: center;
   text-shadow: 0px 4px 6px #3596c7;
 }
@@ -74,7 +83,6 @@ h2 {
   color: white;
   padding-bottom: 10px;
   text-align: center;
-  text-shadow: 0px 4px 6px #3596c7;
 }
 
 h3 {
@@ -82,19 +90,25 @@ h3 {
   font-size: 47px;
   letter-spacing: 5px;
   line-height: 5px;
-  color: white;
+  color: #ec48f5;
   text-align: center;
-  text-shadow: 0px 4px 6px #3596c7;
 }
 
-h4 {
+#new {
   font-family: "Lucida console", Arial, sans-serif;
   font-size: 47px;
   letter-spacing: 5px;
   line-height: 5px;
+  color: #5ccf4c;
+  text-align: center;
+}
+
+h4 {
+  font-family: "Lucida Console", Arial, sans-serif;
+  font-size: 47px;
+  letter-spacing: 12px;
   color: white;
   text-align: center;
-  text-shadow: 0px 4px 6px #3596c7;
 }
 
 h5 {
@@ -102,8 +116,7 @@ h5 {
   font-size: 47px;
   letter-spacing: 5px;
   line-height: 5px;
-  color: white;
+  color: #e8d123;
   padding-bottom: 58px;
   text-align: center;
-  text-shadow: 0px 4px 6px #3596c7;
 }
