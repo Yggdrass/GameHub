@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Lucida Console";
+  src: url("lucida_console_regular.ttf");
+
+  font-family: "Bauhaus_93";
+  src: url("bauhs93.ttf");
+}
+
+body {
+  background-color: #1b203d;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: white;
+  display: flex;
+  flex-flow: row;
+  max-height: 130px;
+  width: 100%;
+  padding-left: 284px;
+  position: relative;
+}
+
+nav,
+#hamburger-menu {
+  background-color: white;
+  font-family: "Lucida console", Arial, sans-serif;
+  font-size: 38px;
+  display: flex;
+}
+
+nav li {
+  display: inline-block;
+  padding-left: 117px;
+  padding-top: 8px;
+}
+
+nav a {
+  color: #1b203d;
+  text-decoration: none;
+  padding-bottom: 46px;
+  padding-top: 46px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  max-width: 149px;
+  max-height: 94px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 359px;
+}
+
+h1 {
+  font-family: "Bauhaus_93", Arial, sans-serif;
+  font-size: 81px;
+  letter-spacing: 12px;
+  text-decoration: none;
+  text-decoration-color: #1b203d;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 4px 6px #3596c7;
+}
+
+h2 {
+  font-family: "Lucida console", Arial, sans-serif;
+  font-size: 59px;
+  letter-spacing: 5px;
+  line-height: 5px;
+  color: white;
+  padding-bottom: 10px;
+  text-align: center;
+  text-shadow: 0px 4px 6px #3596c7;
+}
+
+h3 {
+  font-family: "Lucida console", Arial, sans-serif;
+  font-size: 47px;
+  letter-spacing: 5px;
+  line-height: 5px;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 4px 6px #3596c7;
+}
+
+h4 {
+  font-family: "Lucida console", Arial, sans-serif;
+  font-size: 47px;
+  letter-spacing: 5px;
+  line-height: 5px;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 4px 6px #3596c7;
+}
+
+h5 {
+  font-family: "Lucida console", Arial, sans-serif;
+  font-size: 47px;
+  letter-spacing: 5px;
+  line-height: 5px;
+  color: white;
+  padding-bottom: 58px;
+  text-align: center;
+  text-shadow: 0px 4px 6px #3596c7;
+}
