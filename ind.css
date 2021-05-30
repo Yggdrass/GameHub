@@ -16,24 +16,28 @@ header {
   background: white;
   display: flex;
   max-height: 130px;
-  padding-left: 100px;
   z-index: 1;
+  padding: 10px;
 }
 
-.logo {
-  max-width: 100%;
-  padding-top: 18px;
-  padding-bottom: 18px;
+nav {
+  background-color: white;
+  display: flex;
+  font-family: "Lucida_Console", Arial, sans-serif;
+  font-size: 38px;
+  position: static;
 }
 
-nav,
 #hamburger-menu {
   background-color: white;
   display: none;
+  font-family: "Lucida_Console", Arial, sans-serif;
+  font-size: 38px;
 }
 
 nav li {
-  display: block;
+  display: flex;
+  padding: 20px;
 }
 
 nav ul {
@@ -42,18 +46,24 @@ nav ul {
 
 nav a {
   color: #1b203d;
-  display: block;
   text-decoration: none;
-  padding: 10px;
-  position: relative;
-  font-family: "Lucida_Console", Arial, sans-serif;
-  font-size: 38px;
+  padding-bottom: 46px;
+  padding-top: 46px;
+  padding-left: 46px;
 }
 
 a:hover {
   color: white;
   background-color: #1b203d;
+  padding: 10px;
   border-radius: 25px;
+}
+
+.logo {
+  max-width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 18px;
 }
 
 .hamburger-label {
@@ -61,6 +71,7 @@ a:hover {
   padding: 10px;
   font-size: 1.5em;
   display: block;
+  size: 100%;
 }
 
 #hamburger-menu:checked ~ nav {
@@ -75,6 +86,15 @@ h1 {
   text-align: center;
   text-shadow: 0px 4px 6px #3596c7;
   -webkit-text-stroke: 0.5px #1b203d;
+}
+
+#h1 {
+  font-family: "Bauhaus_93", Arial, sans-serif;
+  font-size: 81px;
+  letter-spacing: 12px;
+  color: #e8d123;
+  text-align: center;
+  text-shadow: 0px 4px 6px #3596c7;
 }
 
 h2 {
@@ -93,6 +113,23 @@ h3 {
   letter-spacing: 5px;
   line-height: 5px;
   color: #ec48f5;
+  text-align: center;
+}
+
+#new {
+  font-family: "Lucida console", Arial, sans-serif;
+  font-size: 47px;
+  letter-spacing: 5px;
+  line-height: 5px;
+  color: #5ccf4c;
+  text-align: center;
+}
+
+h4 {
+  font-family: "Lucida Console", Arial, sans-serif;
+  font-size: 47px;
+  letter-spacing: 12px;
+  color: white;
   text-align: center;
 }
 
