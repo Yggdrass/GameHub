@@ -9,21 +9,15 @@
 body {
   background-color: #1b203d;
   margin: 0;
-  padding: 0;
 }
 
 header {
   background: white;
   display: flex;
-  max-height: 130px;
+  max-height: 100%;
   padding-left: 100px;
   z-index: 1;
-}
-
-.logo {
-  max-width: 100%;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  position: relative;
 }
 
 nav,
@@ -109,6 +103,9 @@ h5 {
 @media (min-width: 600px) {
   .logo {
     float: left;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 100px;
   }
 
   nav {
