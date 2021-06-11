@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "Lucida_Console";
+  src: url("fonts/lucida_console_regular.ttf");
+
+  font-family: "Bauhaus_93";
+  src: url("fonts/bauhs93.ttf");
+}
+
+body {
+  background-color: #1b203d;
+  margin: auto;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  max-block-size: 50%;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+}
+
+.container div {
+  border: 1px solid black;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.ad_left,
+.ad_right {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ad_left {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 10;
+}
+
+.ad_right {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 10;
+}
+
+.footer {
+  background-color: white;
+  min-height: 50px;
+  margin: 0px;
+  padding: 0px;
+  grid-row-start: 11;
+  grid-row-end: 11;
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
+
+.h1 {
+  font-family: "Bauhaus_93", Arial, sans-serif;
+  font-size: 60px;
+  letter-spacing: 12px;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 4px 6px #3596c7;
+  -webkit-text-stroke: 0.5px #1b203d;
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.button {
+  font-size: 2em;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.main {
+  position: relative;
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 7;
+}
+
+#background {
+  position: relative;
+  top: 20px;
+  left: 190px;
+  z-index: -5;
+}
+
+.arrow_left {
+  position: relative;
+  top: 0px;
+  left: 147px;
+}
+
+.arrow_right {
+  position: relative;
+  top: 355px;
+  left: 1410px;
+}
+
+#girl,
+#boy {
+  border-radius: 10%;
+}
+
+#girl {
+  position: relative;
+  top: 250px;
+  left: 520px;
+}
+
+#boy {
+  position: relative;
+  top: 250px;
+  left: 1150px;
+}
+
+.ind_1 {
+  position: relative;
+  top: 580px;
+  left: 860px;
+}
+
+.ind_2 {
+  position: relative;
+  top: 580px;
+  left: 930px;
+}
+
+.ind_3 {
+  position: relative;
+  top: 580px;
+  left: 1000px;
+}
+
+.main2 {
+  font-family: "Lucida console", Arial, sans-serif;
+  font-size: 40px;
+  letter-spacing: 5px;
+  line-height: 5px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 7;
+  grid-row-end: 10;
+}
+
+#b #c #d {
+  font-size: 30px;
+}
+
+#a {
+  font-size: 40px;
+  color: white;
+}
+
+#b {
+  color: #ec48f5;
+}
+
+#c {
+  color: #5ccf4c;
+}
+
+#d {
+  color: #e8d123;
+}
+
+@media (max-width: 900px) {
+  .ad_left,
+  .ad_right {
+    display: none;
+  }
+
+  .h1 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .main {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 7;
+  }
+
+  .main2 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 7;
+    grid-row-end: 10;
+  }
+}

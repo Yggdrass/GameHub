@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Lucida_Console";
+  src: url("fonts/lucida_console_regular.ttf");
+
+  font-family: "Bauhaus_93";
+  src: url("fonts/bauhs93.ttf");
+}
+
+body {
+  min-height: 100%;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 0.952);
+  display: flex;
+  min-height: 109px;
+  position: sticky;
+  top: 0px;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+i.fas {
+  padding-right: 10px;
+}
+
+nav ul {
+  padding: 26px 0px;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+nav a {
+  color: #1b203d;
+  text-decoration: none;
+  font-family: "Lucida_Console", Arial, sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+  padding: 10px 25px;
+}
+
+a:hover {
+  color: white;
+  background-color: #1b203d;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 10px 25px;
+}
+
+.logo {
+  max-width: 149px;
+  max-height: 94px;
+  padding-right: 50px;
+}
+
+#img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+button {
+  background-color: #5ccf4c;
+  color: white;
+  font-family: "Lucida_Console", Arial, sans-serif;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 20px 30px;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .menu-wrap {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  nav {
+    display: none;
+  }
+
+  .header {
+    justify-content: left;
+  }
+
+  .logo {
+    align-items: flex;
+  }
+
+  .menu-wrap {
+    display: inline-block;
+  }
+}
