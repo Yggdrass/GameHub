@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Lucida_Console";
+  src: url("fonts/lucida_console_regular.ttf");
+
+  font-family: "Bauhaus_93";
+  src: url("fonts/bauhs93.ttf");
+}
+
+body {
+  min-height: 100%;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 0.952);
+  display: flex;
+  min-height: 109px;
+  position: sticky;
+  top: 0px;
+  justify-content: center;
+  padding-top: 10px;
+  z-index: 100;
+}
+
+.error {
+  border: 1px solid darkred;
+  padding: 1rem;
+  color: red;
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.loader {
+  border: 16px solid white;
+  border-top: 16px solid green;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+.success {
+  border: 1px solid green;
+  padding: 1rem;
+  color: green;
+  background: rgba(0, 255, 0, 0.1);
+}
+
+i.fas {
+  padding-right: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+input {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+nav ul {
+  padding: 26px 0px;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+nav a {
+  color: #1b203d;
+  text-decoration: none;
+  font-family: "Lucida_Console", Arial, sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+  padding: 10px 25px;
+}
+
+li a:hover {
+  color: white;
+  background-color: #1b203d;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 10px 25px;
+}
+
+.logo {
+  max-width: 149px;
+  max-height: 94px;
+  padding-right: 50px;
+}
+
+#img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+button {
+  background-color: #5ccf4c;
+  color: white;
+  font-family: "Lucida_Console", Arial, sans-serif;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 20px 30px;
+  align-items: center;
+}
+
+form {
+  padding: 2rem;
+  background: rgba(255, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+@media (min-width: 900px) {
+  .menu-wrap {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  nav {
+    display: none;
+  }
+
+  .header {
+    justify-content: left;
+  }
+
+  .logo {
+    align-items: flex;
+  }
+
+  .menu-wrap {
+    display: inline-block;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
